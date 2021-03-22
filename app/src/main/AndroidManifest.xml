@@ -9,8 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LoginPage">
-        <activity android:name=".RegisterPage"></activity>
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".StudentNavigationDrawer"
+            android:label="@string/title_activity_student_navigation_drawer"
+            android:theme="@style/Theme.LoginPage.NoActionBar"></activity>
+        <activity android:name=".RegisterPage" />
+        <activity android:name=".LoginPage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

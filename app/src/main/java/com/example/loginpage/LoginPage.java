@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.textfield.TextInputLayout;
@@ -20,7 +21,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
-public class MainActivity extends AppCompatActivity {
+public class LoginPage extends AppCompatActivity {
 
     private Button facultyBtn, studentBtn, facultyLoginBtn, studentLoginBtn;
 
@@ -80,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
         facultyRegisterText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, RegisterPage.class);
+                Intent intent = new Intent(LoginPage.this, RegisterPage.class);
                 registerKey = "faculty";
                 intent.putExtra("registerKey", registerKey);
                 startActivity(intent);
@@ -90,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
         studentRegisterText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, RegisterPage.class);
+                Intent intent = new Intent(LoginPage.this, RegisterPage.class);
                 registerKey = "student";
                 intent.putExtra("registerKey", registerKey);
                 startActivity(intent);
@@ -144,7 +145,10 @@ public class MainActivity extends AppCompatActivity {
                     if (studentPasswordText.equals(passwordFromDB)) {
                         studentPassword.setError(null);
                         studentPassword.setErrorEnabled(false);
-                        Snackbar.make(relativeLayout, "Student Login Successful", Snackbar.LENGTH_LONG).show();
+                        Toast.makeText(LoginPage.this, "Login Successful", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(LoginPage.this, StudentNavigationDrawer.class);
+                        startActivity(intent);
+                        LoginPage.this.finish();
                     } else {
                         studentPassword.setError("Incorrect Password");
                         studentPassword.requestFocus();

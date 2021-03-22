@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_internship_offers"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_internship_offers" />
+        <item
+            android:id="@+id/nav_placements"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_placements" />
+        <item
+            android:id="@+id/nav_ebooks"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_ebooks" />
+
+        <item
+            android:id="@+id/nav_question_papers"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_question_papers" />
+    </group>
+</menu>

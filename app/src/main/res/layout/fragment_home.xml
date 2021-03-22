@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <Button
+        android:id="@+id/homeFragment_internshipOffersBtn"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="190dp"
+        android:text="Internship Offers" />
+
+    <Button
+        android:id="@+id/homeFragment_placementsBtn"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/homeFragment_internshipOffersBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Placements" />
+
+    <Button
+        android:id="@+id/homeFragment_eBooksBtn"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/homeFragment_placementsBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="E-Books" />
+
+    <Button
+        android:id="@+id/homeFragment_questionPapersBtn"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/homeFragment_eBooksBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Question Papers" />
+
+
+
+</RelativeLayout>

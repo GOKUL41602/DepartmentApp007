@@ -167,7 +167,7 @@ public class RegisterPage extends AppCompatActivity {
         facultyCancelBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(RegisterPage.this, MainActivity.class);
+                Intent intent = new Intent(RegisterPage.this, LoginPage.class);
                 startActivity(intent);
                 RegisterPage.this.finish();
             }
@@ -176,7 +176,7 @@ public class RegisterPage extends AppCompatActivity {
         studentCancelBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(RegisterPage.this, MainActivity.class);
+                Intent intent = new Intent(RegisterPage.this, LoginPage.class);
                 startActivity(intent);
                 RegisterPage.this.finish();
             }
@@ -250,7 +250,7 @@ public class RegisterPage extends AppCompatActivity {
                 .setAction("LOGIN", new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent = new Intent(RegisterPage.this, MainActivity.class);
+                        Intent intent = new Intent(RegisterPage.this, LoginPage.class);
                         startActivity(intent);
                         RegisterPage.this.finish();
                     }
@@ -279,7 +279,7 @@ public class RegisterPage extends AppCompatActivity {
                 .setAction("LOGIN", new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent = new Intent(RegisterPage.this, MainActivity.class);
+                        Intent intent = new Intent(RegisterPage.this, LoginPage.class);
                         startActivity(intent);
                         RegisterPage.this.finish();
                     }
