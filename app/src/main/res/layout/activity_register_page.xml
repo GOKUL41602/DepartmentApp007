@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/registerPageRelLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterPage">
+
+
+    <ScrollView
+        android:id="@+id/registerPage_facultyScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/registerPage_facultyRegisterRelLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/registerPage_facultyTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="Faculty Registration"
+                android:textColor="@color/red"
+                android:textSize="30sp"
+                android:textStyle="bold|italic" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/registerPage_facultyName"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/registerPage_facultyTitle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Name"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/registerPage_facultyRollNo"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/registerPage_facultyName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Roll No"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/registerPage_facultyPhoneNo"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/registerPage_facultyRollNo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Phone Number"
+                    android:inputType="phone" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/registerPage_facultyDesignation"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/registerPage_facultyPhoneNo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Designation"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/registerPage_facultySubjectOfInterest"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/registerPage_facultyDesignation"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Subject of Interest"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/registerPage_facultyExperience"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/registerPage_facultySubjectOfInterest"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Experience"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/registerPage_facultyCity_Town"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/registerPage_facultyExperience"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:hint="City/Town"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/registerPage_facultyEducation"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/registerPage_facultyCity_Town"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Education"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/registerPage_facultyGmail"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/registerPage_facultyEducation"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:hint="G-Mail"
+                    android:inputType="textEmailAddress" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/registerPage_facultyGenderText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/registerPage_facultyGmail"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="30dp"
+                android:text="Gender"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/registerPage_facultyGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/registerPage_facultyGenderText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/registerPage_facultyMaleGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/registerPage_facultyFemaleGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Female" />
+
+                <RadioButton
+                    android:id="@+id/registerPage_facultyOtherGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Others" />
+            </RadioGroup>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/registerPage_facultyCreatePassword"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/registerPage_facultyGender"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Create Password"
+                    android:inputType="textPassword" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/registerPage_facultyConfirmPassword"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/registerPage_facultyCreatePassword"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/registerPage_facultyRegisterBtn"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/registerPage_facultyConfirmPassword"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/yellow"
+                android:text="Register"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/registerPage_facultyCancelBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/registerPage_facultyRegisterBtn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:text="Cancel" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/registerPage_studentScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/registerPage_studentRelLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/registerPage_studentTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="Student Registration"
+                android:textColor="@color/red"
+                android:textSize="30sp"
+                android:textStyle="italic|bold" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/registerPage_studentName"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/registerPage_studentTitle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Name"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/registerPage_studentRollNo"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/registerPage_studentName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Roll No  (User Name)"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/registerPage_studentPhoneNo"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/registerPage_studentRollNo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Phone Number"
+                    android:inputType="phone" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/registerPage_studentCurrentYear"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/registerPage_studentPhoneNo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Current Year"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/registerPage_studentGmail"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/registerPage_studentCurrentYear"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:hint="G-Mail"
+                    android:inputType="textEmailAddress" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/registerPage_studentCity_Town"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/registerPage_studentGmail"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:hint="City/Town"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/registerPage_studentGenderText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/registerPage_studentCity_Town"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="30dp"
+                android:text="Gender"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/registerPage_studentGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/registerPage_studentGenderText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/registerPage_studentMaleGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/registerPage_studentFemaleGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Female" />
+
+                <RadioButton
+                    android:id="@+id/registerPage_studentOtherGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Other" />
+            </RadioGroup>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/registerPage_studentCreatePassword"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/registerPage_studentGender"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Create Password"
+                    android:inputType="textPassword" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/registerPage_studentConfirmPassword"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/registerPage_studentCreatePassword"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/registerPage_studentRegisterBtn"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/registerPage_studentConfirmPassword"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/yellow"
+                android:text="Register"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/registerPage_studentCancelBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/registerPage_studentRegisterBtn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:text="Cancel" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

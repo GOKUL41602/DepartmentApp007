@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/loginPage_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Login Page"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+
+    <LinearLayout
+        android:id="@+id/loginPage_studentFacultyLinLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginPage_title"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/loginPage_facultyBtn"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:text="Faculty" />
+
+        <Button
+            android:id="@+id/loginPage_studentBtn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-10dp"
+            android:text="Student" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/loginPage_facultyRelLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginPage_studentFacultyLinLayout"
+        android:layout_marginTop="30dp"
+        android:visibility="visible">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/loginPage_facultyUserName"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:hint="User Name"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/loginPage_facultyPassword"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginPage_facultyUserName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/loginPage_facultyLoginBtn"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginPage_facultyPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/yellow"
+            android:text="Login"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/loginPage_facultyRegisterText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginPage_facultyLoginBtn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="New Faculty? Register"
+            android:textColor="@color/red"
+            android:textSize="23sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/loginPage_studentRelLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginPage_studentFacultyLinLayout"
+        android:layout_marginTop="30dp"
+        android:visibility="gone">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/loginPage_studentUserName"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:hint="User Name"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/loginPage_studentPassword"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loginPage_studentUserName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/loginPage_studentLoginBtn"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginPage_studentPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/yellow"
+            android:text="Login"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/loginPage_studentRegisterText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginPage_studentLoginBtn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="New Student? Register"
+            android:textColor="@color/red"
+            android:textSize="23sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
