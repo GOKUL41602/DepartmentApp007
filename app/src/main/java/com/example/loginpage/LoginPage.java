@@ -12,6 +12,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.loginpage.faculty.FacultyHomePage;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.database.DataSnapshot;
@@ -179,7 +180,8 @@ public class LoginPage extends AppCompatActivity {
                     if (facultyPasswordText.equals(passwordFromDB)) {
                         facultyPassword.setError(null);
                         facultyPassword.setErrorEnabled(false);
-                        Snackbar.make(relativeLayout, "Faculty Login Successful", Snackbar.LENGTH_LONG).show();
+                        Intent intent = new Intent(LoginPage.this, FacultyHomePage.class);
+                        startActivity(intent);
                     } else {
                         facultyPassword.setError("Incorrect Password");
                         facultyPassword.requestFocus();

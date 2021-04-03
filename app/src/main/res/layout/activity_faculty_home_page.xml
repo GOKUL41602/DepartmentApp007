@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/facultyHomePage_drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".faculty.FacultyHomePage"
+    tools:ignore="MissingClass"
+    tools:openDrawer="start">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/facultyHomePage_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="Internship Offers"
+            app:titleTextColor="@color/black">
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <FrameLayout
+            android:id="@+id/facultyHomePage_fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".faculty.FacultyHomePage">
+
+                <RelativeLayout
+                    android:id="@+id/facultyHomePage_empRelLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="No Internship Offers to Display!"
+                        android:textSize="23sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/facultyHomePage_noEmpRelLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/facultyHomePage_noEmpRelLayoutRecView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="20dp" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/facultyHomePage_booksQuestions_semRelLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone">
+
+                    <Button
+                        android:id="@+id/facultyHomePage_booksQuestionsRelLayout_1stSemBtn"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="80dp"
+                        android:text="1st Sem"
+                        android:textStyle="bold"
+                        app:cornerRadius="12dp" />
+
+                    <Button
+                        android:id="@+id/facultyHomePage_booksQuestionsRelLayout_2ndSemBtn"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/facultyHomePage_booksQuestionsRelLayout_1stSemBtn"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="30dp"
+                        android:text="2nd Sem"
+                        android:textStyle="bold"
+                        app:cornerRadius="12dp" />
+
+                    <Button
+                        android:id="@+id/facultyHomePage_booksQuestionsRelLayout_3rdSemBtn"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/facultyHomePage_booksQuestionsRelLayout_2ndSemBtn"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="30dp"
+                        android:text="3rd Sem"
+                        android:textStyle="bold"
+                        app:cornerRadius="12dp" />
+
+                    <Button
+                        android:id="@+id/facultyHomePage_booksQuestionsRelLayout_4thSemBtn"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/facultyHomePage_booksQuestionsRelLayout_3rdSemBtn"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="30dp"
+                        android:text="4th Sem"
+                        android:textStyle="bold"
+                        app:cornerRadius="12dp" />
+
+                    <Button
+                        android:id="@+id/facultyHomePage_booksQuestionsRelLayout_5thSemBtn"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/facultyHomePage_booksQuestionsRelLayout_4thSemBtn"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="30dp"
+                        android:text="5th Sem"
+                        android:textStyle="bold"
+                        app:cornerRadius="12dp" />
+
+                    <Button
+                        android:id="@+id/facultyHomePage_booksQuestionsRelLayout_6thSemBtn"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/facultyHomePage_booksQuestionsRelLayout_5thSemBtn"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="30dp"
+                        android:text="6th Sem"
+                        android:textStyle="bold"
+                        app:cornerRadius="12dp" />
+
+                    <Button
+                        android:id="@+id/facultyHomePage_booksQuestionsRelLayout_7thSemBtn"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/facultyHomePage_booksQuestionsRelLayout_6thSemBtn"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="30dp"
+                        android:text="7th Sem"
+                        android:textStyle="bold"
+                        app:cornerRadius="12dp" />
+
+                    <Button
+                        android:id="@+id/facultyHomePage_booksQuestionsRelLayout_8thSemBtn"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/facultyHomePage_booksQuestionsRelLayout_7thSemBtn"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="30dp"
+                        android:outlineAmbientShadowColor="@color/purple_200"
+                        android:text="8th Sem"
+                        android:textStyle="bold"
+                        app:cornerRadius="12dp" />
+
+                </RelativeLayout>
+
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/facultyHomePage_empRelLayout_addInternBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:src="@drawable/ic_add" />
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/facultyHomePage_nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header_faculty"
+        app:menu="@menu/faculty_nav_items">
+
+    </com.google.android.material.navigation.NavigationView>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
+
+
+
+
+
+
+
+
+

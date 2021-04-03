@@ -3,8 +3,7 @@
     <string name="title_activity_student_navigation_drawer">StudentNavigationDrawer</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">Department App</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
@@ -15,4 +14,17 @@
     <string name="menu_placements">Placements</string>
     <string name="menu_question_papers">Question Papers</string>
     <string name="menu_ebooks">E-Books</string>
+
+
+    <string name="navigation_draw_open">Open navigation drawer</string>
+    <string name="navigation_draw_close">Close navigation drawer</string>
+
+    <string-array name="academic_year_question_books">
+        <item>select Academic Year</item>
+        <item>2016–2017</item>
+        <item>2017–2018</item>
+        <item>2018–2019</item>
+        <item>2019–2020</item>
+        <item>2020–2021</item>
+    </string-array>
 </resources>

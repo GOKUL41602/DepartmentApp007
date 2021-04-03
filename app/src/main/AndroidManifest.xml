@@ -9,10 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LoginPage">
+        <activity android:name=".faculty.SemesterDivisionPage"></activity>
+        <activity android:name=".faculty.FacultyPlacementsOffers" />
+        <activity
+            android:name=".faculty.FacultyHomePage"
+            android:theme="@style/Theme.LoginPage.NoActionBar" />
         <activity
             android:name=".StudentNavigationDrawer"
             android:label="@string/title_activity_student_navigation_drawer"
-            android:theme="@style/Theme.LoginPage.NoActionBar"></activity>
+            android:theme="@style/Theme.LoginPage.NoActionBar" />
         <activity android:name=".RegisterPage" />
         <activity android:name=".LoginPage">
             <intent-filter>

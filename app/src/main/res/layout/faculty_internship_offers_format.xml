@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/facultyInternshipOffersFormat_courseText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Course : "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/facultyInternshipOffersFormat_course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/facultyInternshipOffersFormat_courseText"
+        android:text="App Development"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/facultyInternshipOffersFormat_companyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/facultyInternshipOffersFormat_course"
+        android:layout_marginTop="10dp"
+        android:text="Company Name : "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/facultyInternshipOffersFormat_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/facultyInternshipOffersFormat_course"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/facultyInternshipOffersFormat_companyText"
+        android:text="App Development"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/facultyInternshipOffersFormat_durationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/facultyInternshipOffersFormat_company"
+        android:layout_marginTop="10dp"
+        android:text="Duration : "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/facultyInternshipOffersFormat_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/facultyInternshipOffersFormat_company"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/facultyInternshipOffersFormat_durationText"
+        android:text="6 Months"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/facultyInternshipOffersFormat_internStartAtText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/facultyInternshipOffersFormat_duration"
+        android:layout_marginTop="10dp"
+        android:text="StartsAt : "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/facultyInternshipOffersFormat_internStartAt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/facultyInternshipOffersFormat_duration"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/facultyInternshipOffersFormat_durationText"
+        android:text="Apr 9,2021"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/facultyInternshipOffersFormat_editIntern"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/facultyInternshipOffersFormat_duration"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/facultyInternshipOffersFormat_internStartAt"
+        android:src="@drawable/ic_edit" />
+
+    <ImageView
+        android:id="@+id/facultyInternshipOffersFormat_deleteIntern"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/facultyInternshipOffersFormat_duration"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/facultyInternshipOffersFormat_editIntern"
+        android:src="@drawable/ic_delete" />
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/faculty_nav_home"
+            android:icon="@drawable/ic_edit"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/faculty_nav_placements"
+            android:icon="@drawable/ic_edit"
+            android:title="Placements" />
+
+        <item
+            android:id="@+id/faculty_nav_eBooks"
+            android:icon="@drawable/ic_edit"
+            android:title="E-Books" />
+
+        <item
+            android:id="@+id/faculty_nav_questionPapers"
+            android:icon="@drawable/ic_edit"
+            android:title="Question Papers" />
+
+
+    </group>
+
+</menu>
